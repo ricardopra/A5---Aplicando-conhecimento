@@ -1,0 +1,43 @@
+.footer {
+  background: #000000;
+  max-width: 100%;
+  padding: 40px 40px 40px 40px;
+  margin: 0 auto;
+  position: relative;
+  min-height: 15vh;
+}
+
+.footer h1 {
+  color: aliceblue;
+}
+
+.footer a {
+  text-decoration: none;
+  color: inherit;
+  color: aliceblue;
+}
+
+.footer a:hover {
+  background-color: darkgoldenrod;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-box-shadow-radius: 3px;
+  margin: 5px;
+ 
+}
+
+
+@media (max-width: 800px) {
+  .footer {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .footer {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }  
+}

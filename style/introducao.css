@@ -1,0 +1,102 @@
+.introducao {
+    max-width: 1200px;
+    padding: 40px 80px;
+    margin: 0 40px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 150px;
+    align-items: center;
+  }
+
+  .introducao h1 {
+    font-size: 4rem;
+    line-height: 1.125;
+    margin-bottom: 30px;
+    position: relative;
+    color: #525252;
+  
+  }
+
+  .introducao h1:hover{
+    transform: scale(1.02);     
+  }
+
+  .introducao p {
+    font-size: 1.5rem;
+    color: #525252;
+     }
+
+  .introducao img{
+    width: 350px;
+    margin: 10px auto;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    padding: auto;
+  }
+
+  .introducao img:hover{
+    transform: scale(1.02); 
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); 
+  }
+
+  .botoes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+  }
+
+  .primary-btn {
+    font-size: 1.25rem;
+    width: 200px;
+    padding: 40px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    cursor: pointer;    
+    text-align: center;
+  }
+
+  .primary-btn:hover{
+    transform: scale(1.02); 
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); 
+  }
+
+  .primary-btn a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+   @media (max-width: 1000px) {
+    .introducao h1 {
+      font-size: 3rem;
+    }
+  }
+  
+  @media (max-width: 800px) {
+    .introducao {
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+
+    .introducao p{
+      font-size: 1rem;
+    }
+    .introducao h1 {
+      font-size: 2rem;
+    }
+    .botoes{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .introducao {
+      grid-template-columns: 1fr;
+    }
+    .introducao img {
+      display: none;
+    }
+  }

@@ -1,0 +1,122 @@
+.section3 {
+    max-width: 1200px;
+    padding: 40px 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .formulario {
+    max-width: 500px;
+    margin: 60px auto;
+    border: 1px solid #ccc;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .formulario td{
+    text-align:left;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align:left;
+  }
+  
+  input, select {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #8a5555;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+  }
+  
+  input:focus, select:focus {
+    outline: none;
+    border-color: #999;
+  }
+  
+  button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #525252;
+    color: #e9e4e4;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #080000;
+  }
+  
+  .tabela h1{
+    margin: 20px;
+    padding: 10px;
+  }
+
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .tabela th, td {
+    border: 5px solid #ccc;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+  }
+  
+  .tabela th {
+    background-color: #f2f2f2;
+  }
+
+
+  @media (max-width: 800px) {
+    .section3 {
+      grid-template-columns: 1fr;
+      font-size: 0.7rem;
+      /* gap: 10px; */
+    }
+
+    .formulario{
+        grid-template-columns: 1fr;
+        /* gap: 10px; */
+    }
+
+    .section3 h1 {
+      font-size: 1rem;
+    }
+
+    
+  }
+
+  @media (max-width: 480px) {
+    .section3 {
+      grid-template-columns: 1fr;
+      font-size: 0.7rem;      
+    }
+
+    .formulario{
+        grid-template-columns: 1fr;
+        font-size: 0.7rem;
+        max-width: 100%;
+        }        
+
+    .section3 h1 {
+      font-size: 0.7rem;
+    }
+    
+  } 
