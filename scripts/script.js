@@ -1,5 +1,5 @@
 const nome = 'Jose Pereira <br>'
-const ano = 'Ano - 2020 <br>'
+const ano = 'Ano - 2024 <br>'
 const twitter = 'Twitter: @josepereira <br>'
 const facebook = 'Facebook: @josepereira <br>'
 const instagram = 'Instagram: @josepereira <br>'
